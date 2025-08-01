@@ -1,0 +1,315 @@
+/* tasarımdaki görüntüyü ayarlama */
+body {
+    /* bodydeki tüm alana fontu uygulama*/
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+/* sayfa ortalama işlemi */
+#wrapper {
+    max-width: 800px; /* max genişlik */
+    margin: 0 auto ; /*sayfanın boşluklarını saga sola eşit ortalama */
+    display: flex;  /*flex yapma*/
+    flex-direction: column; /* alt alta olmasını sağlamak için */
+    row-gap: 1rem; /*elemanların arasında boşluk olusturmak için*/
+}
+
+
+/* header içerigi işlemleri */ 
+header {
+    padding: 1rem 0 ; /* boşluk verme dolgu . elemanın kendisi ile border arasında boşluk verir.*/
+}   
+
+/* logo üzerinde oynama yapma */
+header img.logo {
+    height: 30px; /* yükseklik değeri verdigimizde : width otomatik olarak ayarlanır.*/
+    margin-right: 2rem;
+}
+
+
+/*search bölümü üzerinde oynama */
+header .search {
+    gap: 1rem;
+    cursor: pointer; /* iconun üzerine gidilidiginde cursor değişir*/
+    margin-left: 1rem;
+}
+
+
+/* nav bölümü üzerinde oynama */
+header nav {
+    gap: 1rem;
+}
+
+
+.search-container {
+    position: relative;
+    width: 200px; /* Genişlik ayarlanabilir */
+}
+
+.search-container input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+
+
+
+
+/* a taglerinin üzeirnde oynama */
+header nav a {
+    text-decoration: none;
+    color: seagreen;
+    background-color:whitesmoke ;
+    font-size: 1.5rem;   
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+
+/* üzerine geldigimizde tagların özellikleri */
+header nav a:hover {
+    color: brown;
+    transform: scale(1.1);
+}
+
+
+header .workintech {
+    height: 40px;
+    position: fixed;
+    top: 20px;         
+    right: 30px;
+}
+
+
+
+
+/* ----------- MAIN BÖLÜMÜ -------------- */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border: solid 1px black;
+    background-image: url("/images/popular_movie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    padding: 3rem 2rem;
+}
+
+
+
+/* movie itemslara border vermek sınırlandırmak*/
+
+
+.item-content a { 
+    font-size: 0.8rem;
+    color: white;
+    background-color:red;
+    padding: 5px 8px;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+    width: 40%;
+    margin-top: 0.3rem ;
+}
+
+
+
+.hero-content a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 0.4rem;
+    width: 15%;
+    padding: 10px;
+    transition: 0.4s;
+
+}
+
+.hero-content a:hover {
+    background-color: beige;
+    color: seagreen;
+    border: 1px solid seagreen;
+    transform: scale(1.1);
+
+}
+
+
+.hero-content .age {
+    border: 1px solid black;
+    border-radius: 5px ;
+    padding: 0 0.2rem;
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* ----------- SECTION 1 - 2 BÖLÜMÜ -------------- */
+
+
+.movies .item {
+    width: 32%;
+    background-color: whitesmoke; 
+    border : 1px solid black;
+    
+}
+
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+
+.item h3 {
+    margin-bottom:  1rem;
+}
+
+
+.item-detail {
+    font-size: 0.8rem;
+}
+
+.item-detail .age {
+    border: 1px solid black;
+    border-radius: 5px ;
+    padding: 0 0.2rem;
+    margin: 0.5rem;
+}
+
+
+
+.item-content a:hover {
+    background-color: beige;
+    color: seagreen;
+    border: 1px solid seagreen;
+    transform: scale(1.1);
+}
+
+
+.movie-header h2 {
+    font-size: 1rem;
+    color:  black;
+}
+
+.movie-header a {
+    font-size: 0.7rem;
+    color: gray;
+    transition: 0.4rem;
+}
+.movie-header a:hover {
+    color: seagreen;
+}
+
+
+
+
+/*film image - css ile yüklemek istedim ......... */
+.b-image-1 {
+    background-image: url("/images/film\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+
+.b-image-2 {
+    background-image: url("/images/film2.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+.b-image-3 {
+    background-image: url("/images/film\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+.b-image-4 {
+    background-image: url("/images/film4.jpg" );
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.b-image-5 {
+    background-image: url("/images/film\ 5.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+.b-image-6 {
+    background-image: url("/images/film\ 6.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+/* ----------- FOOTER BÖLÜMÜ -------------- */
+
+
+footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.my-flex2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .term {
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+footer .apps-logo i {
+    height: 2rem;
+}
+
+footer h4 {
+    margin-top: 0 ;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+footer .term a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}

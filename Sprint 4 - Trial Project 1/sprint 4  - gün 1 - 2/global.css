@@ -1,0 +1,39 @@
+/* flex özellikleri aynı olanları class verip gruplama işlemi yaparak 
+ilgili elemanların hepsine yazacagımız kodu tek bir kod ile yapabiliriz */
+
+/* her bir ortak kullanılacak özellikleri bu kısımda belirleyip sonrasındda 
+classların içine verebiliriz . daha fazla da oluşturulabilir .*/
+
+
+
+
+.my-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.zoom-items-m {
+    transition: 0.4s;
+}
+.zoom-items:hover {
+    transform: scale(1.1);
+    color: white;
+    margin: 1rem;
+    border-color: brown;
+}
+
+.b-text { 
+    font-weight: bold;
+}
+
+
+.u-t {
+    text-decoration: underline;
+}
+
+
+.h-u:hover {
+    color:brown;
+}

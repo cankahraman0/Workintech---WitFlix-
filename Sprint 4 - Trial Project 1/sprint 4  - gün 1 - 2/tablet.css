@@ -1,0 +1,45 @@
+@media (max-width: 700px) {
+    #wrapper {
+        padding: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .search-container {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content a {
+        width: 50%;
+        font-size: 1.1rem;
+    }
+
+    .movies {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .movies .item {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .workintech {
+        position: static;
+    }
+}
